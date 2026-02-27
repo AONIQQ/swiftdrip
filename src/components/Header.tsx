@@ -58,18 +58,15 @@ export default function Header() {
       >
         <nav className="mx-auto flex max-w-7xl items-center justify-between px-6 py-4 lg:px-8">
           {/* Logo */}
-          <Link href="/" className="relative flex items-center gap-3 group">
+          <Link href="/" className="relative group">
             <Image
-              src="/logo.jpg"
+              src="/images/SwiftDripLogo2-1024x266.webp"
               alt={SITE_NAME}
-              width={48}
-              height={48}
-              className="rounded-full ring-2 ring-blue-primary/20 transition-all duration-300 group-hover:ring-blue-primary/50"
+              width={180}
+              height={47}
+              className="transition-opacity duration-300 group-hover:opacity-80"
               priority
             />
-            <span className="hidden sm:block font-serif text-lg font-semibold tracking-tight text-navy transition-colors duration-300">
-              {SITE_NAME}
-            </span>
           </Link>
 
           {/* Desktop Nav */}
