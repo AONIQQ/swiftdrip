@@ -13,6 +13,41 @@ export const allServicesQuery = groq`
     price,
     duration,
     benefits,
+    mobile,
+    featured,
+    order
+  }
+`;
+
+export const ivDripServicesQuery = groq`
+  *[_type == "service" && category == "iv-drip"] | order(order asc) {
+    _id,
+    name,
+    slug,
+    category,
+    description,
+    shortDescription,
+    icon,
+    price,
+    benefits,
+    mobile,
+    featured,
+    order
+  }
+`;
+
+export const rapidTestServicesQuery = groq`
+  *[_type == "service" && category == "rapid-test"] | order(order asc) {
+    _id,
+    name,
+    slug,
+    category,
+    description,
+    shortDescription,
+    icon,
+    price,
+    benefits,
+    mobile,
     featured,
     order
   }
